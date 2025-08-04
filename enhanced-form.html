@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Demo Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    header, nav, main, section, article, footer {
+      padding: 20px;
+      margin: 10px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .form-section {
+      max-width: 600px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      background: #eaeaea;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My HTML5 Page</h1>
+    <p>This page demonstrates proper use of semantic tags, lists, tables, media, and forms with built-in validation.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#content">Content</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#form">Form</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="content">
+      <h2>Organized Content</h2>
+
+      <article>
+        <h3>Unordered List of Hobbies</h3>
+        <ul>
+          <li>Reading</li>
+          <li>Traveling</li>
+          <li>Coding</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Ordered List of Learning Steps</h3>
+        <ol>
+          <li>Learn HTML5</li>
+          <li>Understand CSS</li>
+          <li>Practice JavaScript</li>
+        </ol>
+      </article>
+
+      <article>
+        <h3>Simple Table of Skills</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Level</th>
+              <th>Years of Experience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Advanced</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Intermediate</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Beginner</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section id="media">
+      <h2>Embedded Media</h2>
+
+      <article>
+        <h3>Profile Picture</h3>
+        <img src="https://images.pexels.com/photos/31527637/pexels-photo-31527637.jpeg" alt="living room" width="200" height="150">
+      </article>
+
+      <article>
+        <h3>Sample Video</h3>
+        <video controls width="320">
+          <source src="https://videos.pexels.com/video-files/10350615/10350615-hd_2560_1440_30fps.mp4" type="video/mp4" contronls, autoplay, muted, >
+          Your browser does not support the video element.
+        </video>
+      </article>
+    </section>
+
+    <section id="form" class="form-section">
+      <h2>HTML5 Contact Form</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required autocomplete="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="e.g. user@example.com" required autocomplete="email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 123-456-7890" autocomplete="tel">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">Select your country</option>
+          <option value="ng">Nigeria</option>
+          <option value="us">United States</option>
+          <option value="uk">United Kingdom</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4"></textarea>
+
+        <label for="userid">User ID (readonly):</label>
+        <input type="text" id="userid" name="userid" value="USER12345" readonly>
+
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the terms and conditions
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
